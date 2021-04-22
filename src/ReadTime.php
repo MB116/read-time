@@ -76,7 +76,7 @@ class ReadTime
         $this->timeOnly = false;
         $this->omitSeconds = $omitSeconds;
         $this->defaultTranslations();
-        $this->wordsInContent = (int) str_word_count($this->content);
+        $this->wordsInContent = (int) str_word_count($this->content, null, "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя");
         $this->wordsPerMinute = (int) $wordsPerMinute;
     }
 
